@@ -1,7 +1,9 @@
 <?php
+// Tells the browser to return the scripts to the JSON data
 header('Content-Type: application/json');
+// Imports the database connection function
 require_once 'db.php';
-
+// Initiates a connection to the database
 $conn = getDB();
 
 // Get top 20 scores (best score per user)
@@ -16,8 +18,10 @@ $sql = "
     LIMIT 20
 ";
 
+// Initiates the SQL query
 $result = $conn->query($sql);
 
+// Sends an error message when the SQL query fails
 if (!$result) {
     echo json_encode([
         'success' => false,
