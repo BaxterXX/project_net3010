@@ -1,3 +1,10 @@
+/* 
+   Group Name: Leaderboard Game
+   Members: Yifan Sun, Tony Baxter, Zongrui Liu
+   Author: Zongrui Liu
+   Usage: HTML for the login page, allowing users to authenticate,
+   manage session state, and access score saving and leaderboard features.
+*/
 <!doctype html>
 <html lang="en">
   <head>
@@ -24,6 +31,7 @@
       </ul>
     </nav>
 
+    // Logging In 
     <div class="auth-wrapper">
       <div class="card auth-card fade-in">
         <h2 class="auth-title">LOGIN</h2>
@@ -31,6 +39,7 @@
 
         <div class="auth-error" id="loginError"></div>
 
+        // Username Input
         <div class="form-group">
           <label for="username">Username</label>
           <input
@@ -41,6 +50,7 @@
           />
         </div>
 
+        // Password Input
         <div class="form-group">
           <label for="password">Password</label>
           <input
@@ -53,6 +63,7 @@
 
         <button class="btn btn-primary" id="btnLogin">Login</button>
 
+        // If the user logins as a new users
         <div class="auth-footer">
           Don't have an account? <a href="register.html">Register here</a>
         </div>
