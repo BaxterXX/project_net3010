@@ -1,3 +1,10 @@
+/* 
+   Group Name: Leaderboard Game
+   Members: Yifan Sun, Tony Baxter, Zongrui Liu
+   Author: Zongrui Liu
+   Usage: HTML for the registration page, allowing new users to create 
+   an account, validate credentials, store session data, and enable score saving.
+*/
 <!doctype html>
 <html lang="en">
   <head>
@@ -22,6 +29,7 @@
       </ul>
     </nav>
 
+    // Registers new users 
     <div class="auth-wrapper">
       <div class="card auth-card fade-in">
         <h2 class="auth-title">REGISTER</h2>
@@ -29,6 +37,7 @@
 
         <div class="auth-error" id="regError"></div>
 
+        // Username Input
         <div class="form-group">
           <label for="username">Username</label>
           <input
@@ -39,6 +48,7 @@
           />
         </div>
 
+        // Password Input
         <div class="form-group">
           <label for="password">Password</label>
           <input
@@ -68,6 +78,7 @@
           Create Account
         </button>
 
+        // If the users already created an account
         <div class="auth-footer">
           Already have an account? <a href="login.html">Login here</a>
         </div>
